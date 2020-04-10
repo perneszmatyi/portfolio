@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-boxs;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
 
 }
 
@@ -21,23 +23,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-
 }
 
 .main::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   z-index: 2;
-   background-color: rgba(0, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 
 .container {
-    border: 1px solid red;
     position: absolute;
     width: 50vw;
     height: 50vh;
@@ -56,7 +56,6 @@
     position: absolute;
     top: calc(50% - 6rem);
     left: 0;
-    border: 1px solid red;
 }
 
 
@@ -78,7 +77,6 @@
 .about {
     width: 100vw;
     height: 50vh;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +85,6 @@
 
 .acontainer {
     position: absolute;
-    border: 1px solid red;
     width: 70vw;
     height: 100%;
     display: flex;
@@ -97,16 +94,20 @@
 
 p.random {
     box-sizing: content-box;
-    border: 1px solid red;
-    margin: 0px  60px  0px 5rem;
-    font-size: 1.3rem;
+    margin: 5px  60px  0px 5rem;
+    font-size: 1.1rem;
     text-align: center;
+
+
+}
+p.random, .about-box > h2 {
+    font-family: 'IBM Plex Serif', sans-serif;
 
 }
 
 i[class ="far fa-address-card fa-10x"] {
-    border: 1px solid red;
     margin-left: 10rem;
+    margin-right: 2rem;
 }
 
 .about {
@@ -123,9 +124,64 @@ i[class ="far fa-address-card fa-10x"] {
 .about-box {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     justify-content: center;
     text-align: center;
     align-items: center;
+    max-width: 500px;
 }
 
+
+.contact {
+    width: 100vw;
+    height: 40vh;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0.5rem;
+}
+.ccontainer {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 4.5rem;
+    justify-content: space-evenly;
+    padding: 0.7rem;
+
+    
+
+}
+
+.contact-title {
+    position: relative;
+    top: -6rem;
+    font-size: 3rem;
+    font-family: 'IBM Plex Serif', sans-serif;
+    }
+
+.ccontainer i {
+    /* margin: 0 2rem 0 2rem; */
+    padding: 0;
+    text-decoration: none;
+    color: #444
+}
+
+
+a:visited  .ccontainer i{
+    color: #444;
+}
+
+footer {
+    height: 5vh;
+    background-color: #444;
+    text-align: center;
+    
+}
+
+footer > p {
+    color: #fff;
+    font-size: 1.3rem;
+}
