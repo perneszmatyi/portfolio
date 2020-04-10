@@ -59,6 +59,8 @@
     border: 1px solid red;
 }
 
+
+
 .title {
     letter-spacing: 3px;
     font-family: 'IBM Plex Serif', sans-serif;
@@ -80,8 +82,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.ccontainer {
-    
+.acontainer {
+    position: absolute;
+    border: 1px solid red;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+p.random {
+    box-sizing: content-box;
+    border: 1px solid red;
+    margin: 0px  60px  0px 5rem;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+i[class ="far fa-address-card fa-10x"] {
+    border: 1px solid red;
+    margin-left: 10rem;
+}
+
+.about {
+    color: #fff;
+    background-color: #222;
+    /* filter: blur(2px); */
+    transition: 250ms all ease;
+}
+
+.about:hover {
+    filter: blur(0px);
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
