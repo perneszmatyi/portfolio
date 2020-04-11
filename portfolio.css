@@ -70,7 +70,7 @@
 }
 
 .text {
-    font-size: 2em;
+    font-size: 2rem;
     
 }
 
@@ -97,12 +97,22 @@ p.random {
     margin: 5px  60px  0px 5rem;
     font-size: 1.1rem;
     text-align: center;
-
-
+    
+    
+    
 }
+
+p.randomsmall {
+    visibility: hidden;
+    box-sizing: content-box;
+    margin: 5px  60px  0px 5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
 p.random, .about-box > h2 {
     font-family: 'IBM Plex Serif', sans-serif;
-
+    
 }
 
 i[class ="far fa-address-card fa-10x"] {
@@ -189,4 +199,108 @@ footer {
 footer > p {
     color: #fff;
     font-size: 1.3rem;
+}
+
+
+@media (max-width: 1650px) {
+    .contact-title {
+        top: -8rem;
+    }
+
+    .contact {
+        height: 35vh;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .acontainer i {
+        margin-left: 4rem;
+        margin-right: 0;
+        width: 12.4rem;
+        text-align: center;
+    }
+
+    .about-box h2 {
+        font-size: 2rem;
+    }
+
+    p.random {
+        font-size: 1.3rem;
+    }
+
+    .contact-title {
+        top: -7.6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        overflow: hidden;
+        position: relative;
+        left: -6rem;
+        top: 5rem;
+        width: 30rem;
+    }
+    
+    .box {
+        position: relative;
+        top: -1rem;
+        text-align: left;
+    }
+
+    .title {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        overflow: hidden;
+    }
+    
+    .text {
+        font-size: 2rem;
+    }
+
+    .random {
+        visibility: hidden;
+    }
+
+    p.randomsmall {
+        visibility: visible;
+        color: #fff;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .acontainer i{
+        width: 2em;
+        margin-left: 2.5rem;
+    }
+    
+    .about-box {
+        position: relative;
+        
+    }
+    
+    .about-box h2 {
+        position: absolute;
+        top: 0;
+        font-size: 2.6rem;
+    }
+
+    .acontainer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .acontainer i{
+        margin: auto;
+    }
+
+    .about-box {
+        height: 35vh;
+    }
+
 }
